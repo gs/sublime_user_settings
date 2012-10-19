@@ -1,4 +1,0 @@
-{
-	"last_test_run": "ruby -Itest test/unit/nine_flats_client_test.rb -n 'test_access_place_data'",
-	"last_test_working_dir": "/Users/grzegorz/Work/qype/main/qype"
-}
