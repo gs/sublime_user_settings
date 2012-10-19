@@ -1,0 +1,49 @@
+[
+   {
+    "command": "navigate_to_definition",
+    "keys": ["ctrl+]"]
+  },
+  {
+    "command": "jump_back",
+    "keys": ["ctrl+["]
+  },
+  { "keys": ["ctrl+shift+["], "command": "previous_edit" },
+  { "keys": ["ctrl+shift+]"], "command": "next_edit" },
+  { "keys": ["ctrl+shift+t"], "command": "delete_trailing_spaces" },
+  { "keys": ["ctrl+shift+."], "command": "erb" },
+  { "keys": ["ctrl+super+left"], "command": "focus_group", "args": { "group": 0 } },
+  { "keys": ["ctrl+super+right"], "command": "focus_group", "args": { "group": 1 } },
+  { "keys": ["super+ctrl+l"], "command": "run_macro_file", "args": {"file": "Packages/User/HashRocket.sublime-macro"} },
+  { "keys": ["super+shift+r", "g"],
+    "command": "run_macro_file", "args": {"file": "Packages/User/GetText.sublime-macro"},
+    "context": [ { "key": "selector", "operator": "equal", "operand": "source.ruby" } ]
+  },
+
+  { "keys": ["super+shift+r", "g"],
+    "command": "run_macro_file", "args": {"file": "Packages/User/GetTextErb.sublime-macro"},
+    "context": [ { "key": "selector", "operator": "equal", "operand": "text.html.ruby" } ]
+  },
+
+    {
+    "keys": ["alt+1"],
+    "command": "set_layout",
+    "args":
+    {
+      "cols": [0.0, 1.0],
+      "rows": [0.0, 1.0],
+      "cells": [[0, 0, 1, 1]]
+    }
+  },
+  {
+    "keys": ["alt+2"],
+    "command": "set_layout",
+    "args":
+    {
+      "cols": [0.0, 0.5, 1.0],
+      "rows": [0.0, 1.0],
+      "cells": [[0, 0, 1, 1], [1, 0, 2, 1]]
+    }
+  },
+  { "keys": ["ctrl+super+["], "command": "move_to_group", "args": { "group": 0 } },
+  { "keys": ["ctrl+super+]"], "command": "move_to_group", "args": { "group": 1 } }
+]

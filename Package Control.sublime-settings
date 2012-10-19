@@ -1,0 +1,26 @@
+{
+	"auto_upgrade_last_run": 1350641913,
+	"installed_packages":
+	[
+		"BeautifyRuby",
+		"Clipboard History",
+		"CTags",
+		"Cucumber",
+		"DetectSyntax",
+		"Edit History",
+		"ERB Insert and Toggle Commands",
+		"Git",
+		"Line Completion",
+		"LineEndings",
+		"Package Control",
+		"Quick File Creator",
+		"Rails Partial",
+		"Rails Related Files",
+		"RailsCasts Colour Scheme",
+		"RubyTest",
+		"SublimeLinter",
+		"Theme - Soda",
+		"TrailingSpaces",
+		"ZenCoding"
+	]
+}
