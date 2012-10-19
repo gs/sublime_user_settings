@@ -13,14 +13,14 @@
   { "keys": ["ctrl+shift+."], "command": "erb" },
   { "keys": ["ctrl+super+left"], "command": "focus_group", "args": { "group": 0 } },
   { "keys": ["ctrl+super+right"], "command": "focus_group", "args": { "group": 1 } },
-  { "keys": ["super+ctrl+l"], "command": "run_macro_file", "args": {"file": "Packages/User/HashRocket.sublime-macro"} },
+  { "keys": ["super+ctrl+l"], "command": "run_macro_file", "args": {"file": "Packages/User/Macros/HashRocket.sublime-macro"} },
   { "keys": ["super+shift+r", "g"],
-    "command": "run_macro_file", "args": {"file": "Packages/User/GetText.sublime-macro"},
+    "command": "run_macro_file", "args": {"file": "Packages/User/Macros/GetText.sublime-macro"},
     "context": [ { "key": "selector", "operator": "equal", "operand": "source.ruby" } ]
   },
 
   { "keys": ["super+shift+r", "g"],
-    "command": "run_macro_file", "args": {"file": "Packages/User/GetTextErb.sublime-macro"},
+    "command": "run_macro_file", "args": {"file": "Packages/User/Macros/GetTextErb.sublime-macro"},
     "context": [ { "key": "selector", "operator": "equal", "operand": "text.html.ruby" } ]
   },
 
