@@ -60,7 +60,6 @@
   { "keys": ["ctrl+super+["], "command": "move_to_group", "args": { "group": 0 } },
   { "keys": ["ctrl+super+]"], "command": "move_to_group", "args": { "group": 1 } },
   { "keys": ["super+shift+h"], "command": "goto_documentation" },
-  { "keys": ["alt+shift+p"], "command": "pomodoro", "args": {"workingMins": 25, "restingMins": 5} },
 
   { "keys": ["ctrl+m", "ctrl+k"], "command": "next_bookmark" },
   { "keys": ["ctrl+m", "ctrl+j"], "command": "prev_bookmark" },
@@ -68,5 +67,9 @@
   { "keys": ["ctrl+m", "ctrl+c"], "command": "clear_bookmarks" },
 
   {"keys": ["super+alt+up"], "command": "scroll_lines", "args": {"amount": 40.0}},
-  {"keys": ["super+alt+down"], "command": "scroll_lines", "args": {"amount": -40.0}}
+  {"keys": ["super+alt+down"], "command": "scroll_lines", "args": {"amount": -40.0}},
+  { "keys": ["alt+h"], "command": "move", "args": {"by": "characters", "forward": false} },
+  { "keys": ["alt+l"], "command": "move", "args": {"by": "characters", "forward": true} },
+  { "keys": ["alt+k"], "command": "move", "args": {"by": "lines", "forward": false}},
+  { "keys": ["alt+j"], "command": "move", "args": {"by": "lines", "forward": true}}
 ]
