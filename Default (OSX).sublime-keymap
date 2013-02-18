@@ -65,5 +65,8 @@
   { "keys": ["ctrl+m", "ctrl+k"], "command": "next_bookmark" },
   { "keys": ["ctrl+m", "ctrl+j"], "command": "prev_bookmark" },
   { "keys": ["ctrl+m", "ctrl+m"], "command": "toggle_bookmark" },
-  { "keys": ["ctrl+m", "ctrl+c"], "command": "clear_bookmarks" }
+  { "keys": ["ctrl+m", "ctrl+c"], "command": "clear_bookmarks" },
+
+  {"keys": ["super+alt+up"], "command": "scroll_lines", "args": {"amount": 40.0}},
+  {"keys": ["super+alt+down"], "command": "scroll_lines", "args": {"amount": -40.0}}
 ]
