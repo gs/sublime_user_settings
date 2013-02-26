@@ -11,6 +11,8 @@
 		"tags",
 		"*log"
 	],
+
+	"folder_exclude_patterns": [".bundle", "tmp", ".git"],
 	"font_face": "Monaco for Powerline",
 	"font_size": 12.0,
 	"highlight_active_indent_guide": true,
