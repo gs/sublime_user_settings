@@ -68,8 +68,8 @@
 
   {"keys": ["super+alt+up"], "command": "scroll_lines", "args": {"amount": 40.0}},
   {"keys": ["super+alt+down"], "command": "scroll_lines", "args": {"amount": -40.0}},
-  { "keys": ["alt+h"], "command": "move", "args": {"by": "characters", "forward": false} },
-  { "keys": ["alt+l"], "command": "move", "args": {"by": "characters", "forward": true} },
-  { "keys": ["alt+k"], "command": "move", "args": {"by": "lines", "forward": false}},
-  { "keys": ["alt+j"], "command": "move", "args": {"by": "lines", "forward": true}}
+
+  { "keys": ["ctrl+shift+a"], "command": "surround_selection" },
+  { "keys": ["ctrl+shift+d"], "command": "surround_delete" },
+  { "keys": ["ctrl+shift+r"], "command": "surround_change" }
 ]
