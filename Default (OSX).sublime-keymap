@@ -3,6 +3,7 @@
   { "keys": ["super+shift+r", "a"], "command": "run_all_ruby_test" }, // test file
   { "keys": ["super+shift+r", "l"], "command": "run_last_ruby_test" }, // test file
   { "keys": ["super+shift+r", "x"], "command": "show_test_panel" }, // show test panel
+  { "keys": ["super+shift+r", "f"], "command": "generate_file" }, // create file / folder
 
   { "keys": ["alt+shift+v"], "command": "verify_ruby_file" }, // verify ruby syntax
   { "keys": ["super+period"], "command": "switch_between_code_and_test", "args": {"split_view": false} }, // switch between code and test in single mode
