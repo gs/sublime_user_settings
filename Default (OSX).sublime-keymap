@@ -62,5 +62,10 @@
   { "keys": ["ctrl+m", "ctrl+c"], "command": "clear_bookmarks" },
 
   {"keys": ["ctrl+alt+up"], "command": "scroll_lines", "args": {"amount": 40.0}},
-  {"keys": ["ctrl+alt+down"], "command": "scroll_lines", "args": {"amount": -40.0}}
+  {"keys": ["ctrl+alt+down"], "command": "scroll_lines", "args": {"amount": -40.0}},
+
+  { "keys": ["super+k", "super+k"], "command": "new_pane" },
+  { "keys": ["super+k", "super+m"], "command": "close_pane" },
+  { "keys": ["super+k", "super+j"], "command": "focus_neighboring_group", "args": {"forward": false} },
+  { "keys": ["super+k", "super+l"], "command": "focus_neighboring_group" },
 ]
