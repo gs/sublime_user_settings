@@ -7,14 +7,9 @@
   { "keys": ["alt+shift+v"], "command": "verify_ruby_file" }, // verify ruby syntax
   { "keys": ["super+period"], "command": "switch_between_code_and_test", "args": {"split_view": false} }, // switch between code and test in single mode
   { "keys": ["super+ctrl+period"], "command": "switch_between_code_and_test", "args": {"split_view": true} }, // switch between code and test in split view
-  {
-    "command": "navigate_to_definition",
-    "keys": ["ctrl+]"]
-  },
-  {
-    "command": "jump_back",
-    "keys": ["ctrl+["]
-  },
+
+  { "keys": ["ctrl+]"], "command": "goto_definition" },
+  { "keys": ["ctrl+["], "command": "jump_back" },
   { "keys": ["ctrl+shift+["], "command": "previous_edit" },
   { "keys": ["ctrl+shift+]"], "command": "next_edit" },
   { "keys": ["ctrl+shift+."], "command": "erb" },
@@ -66,10 +61,6 @@
   { "keys": ["ctrl+m", "ctrl+m"], "command": "toggle_bookmark" },
   { "keys": ["ctrl+m", "ctrl+c"], "command": "clear_bookmarks" },
 
-  {"keys": ["super+alt+up"], "command": "scroll_lines", "args": {"amount": 40.0}},
-  {"keys": ["super+alt+down"], "command": "scroll_lines", "args": {"amount": -40.0}},
-  { "keys": ["alt+h"], "command": "move", "args": {"by": "characters", "forward": false} },
-  { "keys": ["alt+l"], "command": "move", "args": {"by": "characters", "forward": true} },
-  { "keys": ["alt+k"], "command": "move", "args": {"by": "lines", "forward": false}},
-  { "keys": ["alt+j"], "command": "move", "args": {"by": "lines", "forward": true}}
+  {"keys": ["ctrl+alt+up"], "command": "scroll_lines", "args": {"amount": 40.0}},
+  {"keys": ["ctrl+alt+down"], "command": "scroll_lines", "args": {"amount": -40.0}}
 ]
