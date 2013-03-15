@@ -10,6 +10,7 @@
 
   { "keys": ["ctrl+]"], "command": "goto_definition" },
   { "keys": ["ctrl+["], "command": "jump_back" },
+  { "keys": ["super+alt+up"], "command": "jump_back" },
   { "keys": ["ctrl+shift+["], "command": "previous_edit" },
   { "keys": ["ctrl+shift+]"], "command": "next_edit" },
   { "keys": ["ctrl+shift+."], "command": "erb" },
@@ -49,23 +50,15 @@
       "cells": [[0, 0, 1, 1], [1, 0, 2, 1]]
     }
   },
-  { "keys": ["ctrl+super+left"], "command": "focus_group", "args": { "group": 0 } },
-  { "keys": ["ctrl+super+right"], "command": "focus_group", "args": { "group": 1 } },
-
-  { "keys": ["ctrl+super+["], "command": "move_to_group", "args": { "group": 0 } },
-  { "keys": ["ctrl+super+]"], "command": "move_to_group", "args": { "group": 1 } },
   { "keys": ["super+shift+h"], "command": "goto_documentation" },
 
-  { "keys": ["ctrl+m", "ctrl+k"], "command": "next_bookmark" },
-  { "keys": ["ctrl+m", "ctrl+j"], "command": "prev_bookmark" },
-  { "keys": ["ctrl+m", "ctrl+m"], "command": "toggle_bookmark" },
-  { "keys": ["ctrl+m", "ctrl+c"], "command": "clear_bookmarks" },
+  { "keys": ["ctrl+alt+up"], "command": "new_pane" },
+  { "keys": ["ctrl+alt+down"], "command": "close_pane" },
+  { "keys": ["ctrl+alt+left"], "command": "focus_neighboring_group", "args": {"forward": false} },
+  { "keys": ["ctrl+alt+right"], "command": "focus_neighboring_group" },
+  { "keys": ["super+ctrl+alt+left"], "command": "move_to_neighboring_group", "args": {"forward": false} },
+  { "keys": ["super+ctrl+alt+right"], "command": "move_to_neighboring_group" },
 
-  {"keys": ["ctrl+alt+up"], "command": "scroll_lines", "args": {"amount": 40.0}},
-  {"keys": ["ctrl+alt+down"], "command": "scroll_lines", "args": {"amount": -40.0}},
-
-  { "keys": ["super+k", "super+k"], "command": "new_pane" },
-  { "keys": ["super+k", "super+m"], "command": "close_pane" },
-  { "keys": ["super+k", "super+j"], "command": "focus_neighboring_group", "args": {"forward": false} },
-  { "keys": ["super+k", "super+l"], "command": "focus_neighboring_group" },
+  { "keys": ["super+ctrl+alt+down"], "command": "git_gutter_next_change" },
+  { "keys": ["super+shift+ctrl+alt+down"], "command": "git_gutter_prev_change" }
 ]
