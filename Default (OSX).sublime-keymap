@@ -7,18 +7,16 @@
   { "keys": ["alt+shift+v"], "command": "verify_ruby_file" }, // verify ruby syntax
   { "keys": ["super+period"], "command": "switch_between_code_and_test", "args": {"split_view": false} }, // switch between code and test in single mode
   { "keys": ["super+ctrl+period"], "command": "switch_between_code_and_test", "args": {"split_view": true} }, // switch between code and test in split view
-  {
-    "command": "navigate_to_definition",
-    "keys": ["ctrl+]"]
-  },
-  {
-    "command": "jump_back",
-    "keys": ["ctrl+["]
-  },
-  { "keys": ["ctrl+shift+["], "command": "previous_edit" },
-  { "keys": ["ctrl+shift+]"], "command": "next_edit" },
+  { "keys": ["super+shift+r", "n"], "command": "generate_file" }, // create new file
+
+  { "keys": ["super+shift+r", "d"], "command": "go_to_file" },
+  { "keys": ["super+shift+r", "i"], "command": "file_info" },
+
+  { "keys": ["super+alt+up"], "command": "jump_back" },
   { "keys": ["ctrl+shift+."], "command": "erb" },
   { "keys": ["super+shift+r", "c"], "command": "delete_trailing_spaces" },
+
+  { "keys": ["super+shift+r", "b"], "command": "build", "args": { "variant": "yelp_build" } },
 
   { "keys": ["super+ctrl+l"], "command": "run_macro_file", "args": {"file": "Packages/User/Macros/HashRocket.sublime-macro"} },
 
@@ -32,6 +30,10 @@
   { "keys": ["super+shift+r", "g"],
     "command": "run_macro_file", "args": {"file": "Packages/User/Macros/GetTextErb.sublime-macro"},
     "context": [ { "key": "selector", "operator": "equal", "operand": "text.html.ruby" } ]
+  },
+
+  { "keys": ["alt+d"],
+    "command": "run_macro_file", "args": {"file": "Packages/GoToFile/GoToFile.sublime-macro"}
   },
 
     {
@@ -54,22 +56,20 @@
       "cells": [[0, 0, 1, 1], [1, 0, 2, 1]]
     }
   },
-  { "keys": ["ctrl+super+left"], "command": "focus_group", "args": { "group": 0 } },
-  { "keys": ["ctrl+super+right"], "command": "focus_group", "args": { "group": 1 } },
-
-  { "keys": ["ctrl+super+["], "command": "move_to_group", "args": { "group": 0 } },
-  { "keys": ["ctrl+super+]"], "command": "move_to_group", "args": { "group": 1 } },
   { "keys": ["super+shift+h"], "command": "goto_documentation" },
 
-  { "keys": ["ctrl+m", "ctrl+k"], "command": "next_bookmark" },
-  { "keys": ["ctrl+m", "ctrl+j"], "command": "prev_bookmark" },
-  { "keys": ["ctrl+m", "ctrl+m"], "command": "toggle_bookmark" },
-  { "keys": ["ctrl+m", "ctrl+c"], "command": "clear_bookmarks" },
+  { "keys": ["ctrl+alt+up"], "command": "new_pane" },
+  { "keys": ["ctrl+alt+down"], "command": "close_pane" },
+  { "keys": ["ctrl+alt+left"], "command": "focus_neighboring_group", "args": {"forward": false} },
+  { "keys": ["ctrl+alt+right"], "command": "focus_neighboring_group" },
+  { "keys": ["super+ctrl+alt+left"], "command": "move_to_neighboring_group", "args": {"forward": false} },
+  { "keys": ["super+ctrl+alt+right"], "command": "move_to_neighboring_group" },
 
-  {"keys": ["super+alt+up"], "command": "scroll_lines", "args": {"amount": 40.0}},
-  {"keys": ["super+alt+down"], "command": "scroll_lines", "args": {"amount": -40.0}},
+  { "keys": ["super+ctrl+alt+down"], "command": "git_gutter_next_change" },
+  { "keys": ["super+shift+ctrl+alt+down"], "command": "git_gutter_prev_change" },
+
   { "keys": ["alt+h"], "command": "move", "args": {"by": "characters", "forward": false} },
   { "keys": ["alt+l"], "command": "move", "args": {"by": "characters", "forward": true} },
   { "keys": ["alt+k"], "command": "move", "args": {"by": "lines", "forward": false}},
   { "keys": ["alt+j"], "command": "move", "args": {"by": "lines", "forward": true}}
-]
+ ]
