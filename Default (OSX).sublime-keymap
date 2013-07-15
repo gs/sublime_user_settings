@@ -9,13 +9,14 @@
   { "keys": ["super+ctrl+period"], "command": "switch_between_code_and_test", "args": {"split_view": true} }, // switch between code and test in split view
   { "keys": ["super+shift+r", "n"], "command": "generate_file" }, // create new file
 
-  { "keys": ["ctrl+]"], "command": "goto_definition" },
-  { "keys": ["ctrl+["], "command": "jump_back" },
+  { "keys": ["super+shift+r", "d"], "command": "go_to_file" },
+  { "keys": ["super+shift+r", "i"], "command": "file_info" },
+
   { "keys": ["super+alt+up"], "command": "jump_back" },
-  { "keys": ["ctrl+shift+["], "command": "previous_edit" },
-  { "keys": ["ctrl+shift+]"], "command": "next_edit" },
   { "keys": ["ctrl+shift+."], "command": "erb" },
   { "keys": ["super+shift+r", "c"], "command": "delete_trailing_spaces" },
+
+  { "keys": ["super+shift+r", "b"], "command": "build", "args": { "variant": "yelp_build" } },
 
   { "keys": ["super+ctrl+l"], "command": "run_macro_file", "args": {"file": "Packages/User/Macros/HashRocket.sublime-macro"} },
 
@@ -29,6 +30,10 @@
   { "keys": ["super+shift+r", "g"],
     "command": "run_macro_file", "args": {"file": "Packages/User/Macros/GetTextErb.sublime-macro"},
     "context": [ { "key": "selector", "operator": "equal", "operand": "text.html.ruby" } ]
+  },
+
+  { "keys": ["alt+d"],
+    "command": "run_macro_file", "args": {"file": "Packages/GoToFile/GoToFile.sublime-macro"}
   },
 
     {
@@ -61,5 +66,10 @@
   { "keys": ["super+ctrl+alt+right"], "command": "move_to_neighboring_group" },
 
   { "keys": ["super+ctrl+alt+down"], "command": "git_gutter_next_change" },
-  { "keys": ["super+shift+ctrl+alt+down"], "command": "git_gutter_prev_change" }
-]
+  { "keys": ["super+shift+ctrl+alt+down"], "command": "git_gutter_prev_change" },
+
+  { "keys": ["alt+h"], "command": "move", "args": {"by": "characters", "forward": false} },
+  { "keys": ["alt+l"], "command": "move", "args": {"by": "characters", "forward": true} },
+  { "keys": ["alt+k"], "command": "move", "args": {"by": "lines", "forward": false}},
+  { "keys": ["alt+j"], "command": "move", "args": {"by": "lines", "forward": true}}
+ ]
