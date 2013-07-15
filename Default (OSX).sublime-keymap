@@ -3,6 +3,7 @@
   { "keys": ["super+shift+r", "a"], "command": "run_all_ruby_test" }, // test file
   { "keys": ["super+shift+r", "l"], "command": "run_last_ruby_test" }, // test file
   { "keys": ["super+shift+r", "x"], "command": "show_test_panel" }, // show test panel
+  { "keys": ["super+shift+r", "f"], "command": "generate_file" }, // create file / folder
 
   { "keys": ["alt+shift+v"], "command": "verify_ruby_file" }, // verify ruby syntax
   { "keys": ["super+period"], "command": "switch_between_code_and_test", "args": {"split_view": false} }, // switch between code and test in single mode
@@ -68,8 +69,13 @@
   { "keys": ["super+ctrl+alt+down"], "command": "git_gutter_next_change" },
   { "keys": ["super+shift+ctrl+alt+down"], "command": "git_gutter_prev_change" },
 
+
   { "keys": ["alt+h"], "command": "move", "args": {"by": "characters", "forward": false} },
   { "keys": ["alt+l"], "command": "move", "args": {"by": "characters", "forward": true} },
   { "keys": ["alt+k"], "command": "move", "args": {"by": "lines", "forward": false}},
-  { "keys": ["alt+j"], "command": "move", "args": {"by": "lines", "forward": true}}
- ]
+  { "keys": ["alt+j"], "command": "move", "args": {"by": "lines", "forward": true}},
+
+  { "keys": ["ctrl+shift+a"], "command": "surround_selection" },
+  { "keys": ["ctrl+shift+d"], "command": "surround_delete" },
+  { "keys": ["ctrl+shift+r"], "command": "surround_change" }
+]
